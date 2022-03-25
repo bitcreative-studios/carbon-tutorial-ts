@@ -25,14 +25,15 @@ const TutorialHeader = ({}: TutorialHeaderProps) => {
       render={({ isSideNavExpanded, onClickSideNavExpand }) => (
         <Header>
           <SkipToContent />
-          {/**  @ts-ignore */}
-          <HeaderName element={Link} prefix="IBM" to="/">
-            Carbon Tutorial
-          </HeaderName>
           <HeaderMenuButton
             isActive={isSideNavExpanded}
             onClick={onClickSideNavExpand}
           />
+          {/**  @ts-ignore */}
+          <HeaderName element={Link} prefix="IBM" to="/">
+            Carbon Tutorial
+          </HeaderName>
+
           <HeaderNavigation>
             {/**  @ts-ignore */}
             <HeaderMenuItem element={Link} to="/repos">

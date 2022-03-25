@@ -1,0 +1,30 @@
+@import 'mixins';
+
+.secondRow {
+  margin-top: carbon--rem(-40px);
+  & .tabContent {
+  }
+}
+
+.tabs {
+  transform: translateZ(0);
+  justify-content: flex-end;
+}
+
+.tabContent {
+  padding: $spacing-10 0;
+}
+.heading {
+  @include carbon--type-style('productive-heading-05');
+}
+.subHeading {
+}
+
+.featureGridLabel {
+}
+
+.banner {
+  padding-top: $spacing-05;
+  padding-bottom: $spacing-07 * 4;
+  @include landing-page-background();
+}
